@@ -12,8 +12,8 @@
     height: 35px;
     border: solid 1px #444;
   }
-  .chat-window {
-    height: 300px;
+  .chat-window1, .chat-window2 {
+    height: 100px;
     width: 400px;
   }
   #chatSection {

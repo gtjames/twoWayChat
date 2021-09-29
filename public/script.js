@@ -5,7 +5,8 @@ const chat1       = document.querySelector('.chat-form1');
 const chat2       = document.querySelector('.chat-form2');
 const input1      = document.querySelector('.chat-input1');
 const input2      = document.querySelector('.chat-input2');
-const chatWindow = document.querySelector('.chat-window');
+const chatWindow1 = document.querySelector('.chat-window1');
+const chatWindow2 = document.querySelector('.chat-window2');
 
 chat1.addEventListener('submit', event => {          //  when the submit button is press call this code
     event.preventDefault();                         //  kill the event otherwise the browser will reload the page
@@ -27,9 +28,9 @@ chat2.addEventListener('submit', event => {          //  when the submit button 
 
 socket.on('chat1', message => {                      //  adding an event handler to our socket, listening for any event destined for the named socket 'chat'
     console.log('From server: ', message);
-    chatWindow.innerHTML += "--> "+message + '<br>';       //  take the socket data packet and add it to the chat window
+    chatWindow1.innerHTML += "--> "+message + '<br>';       //  take the socket data packet and add it to the chat window
 });
 socket.on('chat2', message => {                      //  adding an event handler to our socket, listening for any event destined for the named socket 'chat'
     console.log('From server: ', message);
-    chatWindow.innerHTML += "<-- "+message + '<br>';       //  take the socket data packet and add it to the chat window
+    chatWindow2.innerHTML += "<-- "+message + '<br>';       //  take the socket data packet and add it to the chat window
 });
