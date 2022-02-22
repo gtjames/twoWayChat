@@ -1,1 +1,7 @@
 /node_modules
+.idea/vcs.xml
+.idea/vagrant.xml
+.idea/twoWayChat.iml
+.idea/modules.xml
+.idea/.gitignore
+.gitignore
